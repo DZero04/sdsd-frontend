@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MoonIcon from "./assets/icons/moon.svg";
 import SunIcon from "./assets/icons/sun.svg";
 import BaseLayout from "./layout/BaseLayout";
-import { Dashboard, PageNotFound } from "./screens";
+import { PageNotFound } from "./screens";
 import About from "./screens/about/About";
 import TongueScreening from "./screens/tongue_screening/TongueScreening";
 import ScreeningResults from "./screens/screening_results/ScreeningResults";

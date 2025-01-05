@@ -148,7 +148,7 @@ const TongueBody = () => {
           name,
           age,
           gender,
-          region: regionsData.find((r) => r.id === Number(region))?.name || "N/A",
+          region: region,
           result: resultClass === 0 ? "Diabetic" : "Non-Diabetic",
           confidence: `${confidence}%`,
           notes:
@@ -163,7 +163,7 @@ const TongueBody = () => {
           person_name: name,
           age: parseInt(age, 10), 
           gender: gender,
-          region: regionsData.find((r) => r.id === Number(region))?.name || "N/A",  
+          region: region,  
           date: new Date().toISOString().split("T")[0], // Current date
           confidence_level: parseFloat(confidence), // Confidence
           results: result.result // Result ID
@@ -171,15 +171,15 @@ const TongueBody = () => {
         
 
 
-         console.log({
-          person_name: name,
-          age: parseInt(age, 10), 
-          gender: gender,
-          region: regionsData.find((r) => r.id === Number(region))?.name || "N/A",  
-          date: new Date().toISOString().split("T")[0], // Current date
-          confidence_level: parseFloat(confidence), // Confidence
-          results: result.result 
-         });
+        //  console.log({
+        //   person_name: name,
+        //   age: parseInt(age, 10), 
+        //   gender: gender,
+        //   region: regionsData.find((r) => r.id === Number(region))?.name || "N/A",  
+        //   date: new Date().toISOString().split("T")[0], // Current date
+        //   confidence_level: parseFloat(confidence), // Confidence
+        //   results: result.result 
+        //  });
          
          AxiosInstance.post("diabetesdata/", dataToSave)
           .then((response) => {
@@ -253,13 +253,20 @@ const TongueBody = () => {
                 <label>Region</label>
                 <select value={region} onChange={(e) => setRegion(e.target.value)}>
                   <option value="">Select Region</option>
-                  {regionsData
+                  <option value="Davao City">Davao City</option>
+                  <option value="CARAGA Region">CARAGA Region</option>
+                  <option value="SOCKSARGEN">SOCKSARGEN</option>
+                  <option value="NCR">NCR</option>
+                  <option value="CALABARZON">CALABARZON</option>
+                  <option value="MIMAROPA">MIMAROPA</option>
+                  <option value="BARMM">BARMM</option>
+                  {/* {regionsData
                     .filter((_, index) => index !== 0) // Exclude the first index
                     .map((region) => (
                       <option key={region.id} value={region.id.toString()}>
                         {region.name}
                       </option>
-                    ))}
+                    ))} */}
                 </select>
               </div>
               <div className="agreement">
