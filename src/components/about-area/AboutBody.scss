@@ -1,0 +1,79 @@
+.about-page {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    color: var(--xl-text-color);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+  
+    h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color:var(--xl-text-color);
+    }
+  
+    .authors {
+      .authors-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+  
+        .author {
+          text-align: center;
+  
+          img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+          }
+  
+          h3 {
+            font-size: 16px;
+            margin: 5px 0;
+            color: var(--xl-text-color);
+          }
+  
+          .email {
+            font-size: 12px;
+            color: var(--xl-text-color);
+            font-style: italic;
+          }
+  
+          .role {
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--xl-text-color);
+          }
+        }
+      }
+    }
+  
+    .description,
+    .process, 
+    .limitation,
+    .dataset, 
+    .references
+     {
+      margin-top: 60px;
+      text-align: center;
+  
+      h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: var(--xl-text-color);
+      }
+  
+      p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: var(--xl-text-color);
+        max-width: 800px;
+        margin: 0 auto;
+        font-style: italic;
+        margin-top: 2px;
+      }
+    }
+  }
+  

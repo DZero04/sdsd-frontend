@@ -1,0 +1,82 @@
+.table-container {
+    width: 98%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  
+    .dropdown {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 15px;
+  
+      label {
+        font-size: 16px;
+        margin-right: 10px;
+      }
+  
+      select {
+        padding: 5px 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        background: var(--secondary-color);
+        color: var(--xl-text-color);
+      }
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th {
+        background-color: #45458f;
+        color: #fff;
+        font-weight: bold;
+        padding: 12px 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-size: 14px;
+      }
+  
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        font-size: 13px;
+        text-align: center;
+        color: var(--xl-text-color);
+        background-color: var(--secondary-color);
+      }
+    }
+  
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+  
+      button {
+        padding: 5px 10px;
+        margin: 0 5px;
+        background-color: var(--secondary-color);
+        color: var(--xl-text-color);
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: background-color 0.3s;
+  
+        &:disabled {
+          background-color: var(--secondary-color);
+          cursor: not-allowed;
+        }
+  
+        &:hover {
+          background-color: #525270;
+        }
+  
+        &.active {
+          background-color: #45458f; // Active button color
+          color: #ffffff;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  
