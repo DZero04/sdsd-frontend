@@ -6,7 +6,7 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { addDays } from "date-fns";
 import hospital_logo from "../../../assets/images/hospital_logo.png"
-
+import usep from "../../../assets/images/usep.png"
 
 const AreaTop = () => {
   const { openSidebar } = useContext(SidebarContext);
@@ -75,11 +75,11 @@ const AreaTop = () => {
           <MdOutlineMenu size={24} />
         </button>
 
-        <img src={hospital_logo} alt="Hospital Logo" className="area-top-logo" />
+        <img src={usep} alt="USeP Logo" className="area-top-logo" />
         {/* Header Titles */}
         <div>
-          <h4 className="area-top-title">Horizon Apex Advanced Medical Center</h4>
-          <h5 className="area-top-tag">Innovating Health, Inspiring Hope</h5>
+          <h4 className="area-top-title">University of Southeastern Philippines</h4>
+          <h5 className="area-top-tag">College of Information and Computing</h5>
         </div>
       </div>
 
