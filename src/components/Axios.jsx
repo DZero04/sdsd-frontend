@@ -7,7 +7,7 @@ const myURL = isDevelopment ? import.meta.env.VITE_API_BASE_URL_LOCAL : import.m
 const AxiosInstance = axios.create({
 
     baseURL: myURL,
-    timeout: 20000,
+    timeout: 60000,
     headers: {
         "Content-Type": "application/json",
         accept: "application/json",
